@@ -13,7 +13,7 @@ export default function Footer () {
                 <button>About us</button>
                 <button>Contacts</button>
               </div>
-              <Contacts />
+              <Contacts withIcons={false} />
             </div>
           </div>
           <div className="mt-4 text-xs text-[#D9D9D9]">

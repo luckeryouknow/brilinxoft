@@ -1,4 +1,6 @@
-import { ChooseUs, DiscussionSection, HeroSection, Services, Technologies, WhoWeAre } from "@/modules";
+import { 
+  ChooseUs, DiscussionSection, HeroSection, OurTeam, Services, Technologies, WhatCanWeDo, WhoWeAre 
+} from "@/modules";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Technologies />
       <WhoWeAre />
       <ChooseUs />
+      <OurTeam />
+      <WhatCanWeDo />
     </main>
   );
 }
