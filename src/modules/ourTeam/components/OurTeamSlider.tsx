@@ -41,7 +41,7 @@ export default function OurTeamSLider () {
       >
         {teamArray.map((teamElem) => (
           <SwiperSlide className="rouded-[20px]" key={teamElem.name}>
-            <Image src={person} alt='person' width={200} height={400} />
+            <Image src={person} alt='person' width={200} height={400} unoptimized />
             <div className="absolute bottom-0 flex flex-col w-full py-2 gap-1 rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] text-center">
               <h3 className="text-[24px]">{teamElem.name}</h3>
               <p>{teamElem.position}</p>

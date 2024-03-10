@@ -3,43 +3,9 @@
 import { useEffect, useState } from "react";
 
 export default function Blob ({ styles, small }: { styles?: string, small: boolean }) {
-  const [circlesPositions, setCirclePositions] = useState(
-  small ? (
-    [
-      { x: 108, y: 192 },
-      { x: 213, y: 257 },
-      { x: 269, y: 140 },
-    ]
-  ) : (
-    [
-      { x: 216, y: 384 },
-      { x: 413, y: 517 },
-      { x: 538, y: 280 },
-    ]
-  )
-  );
-
-  useEffect(() => {
-    setInterval(() => {
-      if (small) {
-        setCirclePositions([
-          { x: Math.random() * 768, y: Math.random() * 768 },
-          { x: Math.random() * 768, y: Math.random() * 768 },
-          { x: Math.random() * 768, y: Math.random() * 768 },
-        ])
-      } else {
-        setCirclePositions([
-          { x: Math.random() * 748, y: Math.random() * 748 },
-          { x: Math.random() * 748, y: Math.random() * 748 },
-          { x: Math.random() * 748, y: Math.random() * 748 },
-        ]);
-      }
-    }, 3000);
-  });
-
   return (
     <svg
-      className={`absolute z-[-1] top-0 right-0 rounded-[50%] rotate-180 blur-3xl ${styles}`}
+      className={`absolute z-[-1] top-0 right-[-200px] rounded-[50%] transition-[10s ease-in-out] blur-3xl ${styles}`}
       xmlns="http://www.w3.org/2000/svg"
       width={`${small ? "384" : "748"}`}
       height={`${small ? "384" : "748"}`}
@@ -47,30 +13,39 @@ export default function Blob ({ styles, small }: { styles?: string, small: boole
     >
       <g filter="url(#a)">
         <circle
-          style={{ transition: "all 5s", borderRadius: "50%" }}
-          cx={`${circlesPositions[0].x}`}
-          cy={`${circlesPositions[0].y}`}
+          className="trantsition-[10s ease]"
+          cx="216"
+          cy="384"
           r="200"
           fill="#3892F5"
-        />
+        >
+          <animate attributeName="cx" values="216; 412; 533; 410; 216" dur="10s" repeatCount="indefinite" />
+          <animate attributeName="cy" values="384; 600; 793 826; 384" dur="10s" repeatCount="indefinite" />
+        </circle>
       </g>
       <g filter="url(#b)">
         <circle
-          style={{ transition: "all 5s", borderRadius: "50%" }}
-          cx={`${circlesPositions[1].x}`}
-          cy={`${circlesPositions[1].y}`}
+          className="trantsition-[10s ease]"
+          cx="413"
+          cy="517"
           fill="#B519F4"
           r="200"
-        />
+        >
+          <animate attributeName="cx" values="413; 222; 420; 525; 413" dur="10s" repeatCount="indefinite" />
+          <animate attributeName="cy" values="517; 715; 600; 628; 517" dur="10s" repeatCount="indefinite" /> 
+        </circle>
       </g>
       <g filter="url(#c)">
         <circle
-          style={{ transition: "all 5s", borderRadius: "50%" }}
-          cx={`${circlesPositions[2].x}`}
-          cy={`${circlesPositions[2].y}`}
+          className="trantsition-[10s ease]"
+          cx="538"
+          cy="280"
           r="200"
           fill="#F10BD0"
-        />
+        >
+          <animate attributeName="cx" values="538; 527; 301; 303; 538" dur="10s" repeatCount="indefinite" />
+          <animate attributeName="cy" values="280; 830; 903; 601; 280" dur="10s" repeatCount="indefinite" />
+        </circle>
       </g>
       <defs>
         <filter
