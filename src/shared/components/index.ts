@@ -1,4 +1,4 @@
-export { default as Blob } from "./Blob/Blob";
+export {  Blob } from "./Blob/Blob";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as Container } from "./Container/Container";
 export { default as GradientButton } from "./GradientButton/GradientButton"

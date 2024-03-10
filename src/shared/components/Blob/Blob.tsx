@@ -1,8 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react";
-
-export default function Blob ({ styles, small }: { styles?: string, small: boolean }) {
+export async function Blob ({ styles, small }: { styles?: string, small: boolean }) {
   return (
     <svg
       className={`absolute z-[-1] top-0 right-[-200px] rounded-[50%] transition-[10s ease-in-out] blur-3xl ${styles}`}
