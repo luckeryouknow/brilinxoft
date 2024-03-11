@@ -11,7 +11,7 @@ export default function WhoWeAre () {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]"> quality result</span>, demonstrating flexibility in ways to achieve it
           </h2>
         </div>
-        <Blob styles="!top-1/2 !right-0" small={true} />
+        <Blob styles="!top-0 !right-0" small={true} />
       </Container>
     </Section>
   )

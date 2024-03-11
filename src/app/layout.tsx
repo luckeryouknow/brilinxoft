@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Footer, Header } from "@/modules";
 
 import "./globals.css";
 import { Provider } from "@/shared/components";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="overflow-x-hidden" lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="dark:bg-black">
         <Provider>
           <Header />

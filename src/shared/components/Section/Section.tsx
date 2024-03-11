@@ -8,7 +8,7 @@ export default function Section({
 }) {
   return (
     <section
-      className={`pt-20 md:pt-[104px] xl:pt-[164px]`}
+      className="relative pt-20 md:pt-[104px] xl:pt-[164px]"
     >
       {children}
     </section>
