@@ -23,6 +23,7 @@ const config: Config = {
         marqueeLeft2: 'marqueeLeft2 25s linear infinite',
         marqueeRight: 'marqueeRight 25s linear infinite',
         marqueeRight2: 'marqueeRight2 25s linear infinite',
+        'spin-slow': 'spin 6s linear infinite',
       },
       keyframes: {
         marqueeLeft: {

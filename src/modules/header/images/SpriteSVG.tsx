@@ -3,12 +3,12 @@ export default function SpriteSVG ({ name }: { name: string }) {
     case "openBurgerMenu":
       return (
         <svg 
+          className="stroke-[#0F0F0F] dark:stroke-[#D9D9D9]"
           xmlns="http://www.w3.org/2000/svg" 
           width="24" 
           height="24" 
           fill="none">
-          <path 
-            stroke="#D9D9D9" 
+          <path  
             strokeWidth="2" 
             d="M0 7.6362h24M0 16.3633h24"
           />
