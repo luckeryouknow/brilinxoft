@@ -5,10 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function ThemeSwitch () {
   const { theme, setTheme } = useTheme();
-  const [margins, setMargins] = useState<{ left: string, right: string }>({
-    left: "ml-auto",
-    right: "mr-1",
-  });
+  const [margins, setMargins] = useState<{ left: string, right: string }>();
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -22,7 +19,9 @@ export default function ThemeSwitch () {
     <button 
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="w-[50px] h-[22px] rounded-[40px] border-2 dark:border-white border-black">
-      <div className={`w-[26px] h-[14px] ${margins?.left} ${margins?.right} bg-[#B519F4] rounded-[40px]`} />
+      {margins && (
+        <div className={`w-[26px] h-[14px] ${margins.left} ${margins.right} bg-[#B519F4] rounded-[40px]`} />
+      )}    
     </button>
   )
 }

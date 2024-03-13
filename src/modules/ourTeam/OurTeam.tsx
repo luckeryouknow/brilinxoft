@@ -1,8 +1,7 @@
 import { Container, GradientButton, Section, TransparentButton } from "@/shared/components";
 import OurTeamSLider from "./components/OurTeamSlider";
-import person from "./images/person.jpg";
-import Image from "next/image";
-import OurTeamHarmonic from "./components/OurTeamHarmonic";
+import OurTeamHarmonicTablet from "./components/OurTeamHarmonicTablet";
+import OurTeamHarmonicDesktop from "./components/OurTeamHarmonicDesktop";
 
 export default function OurTeam () {
   return (
@@ -25,6 +24,8 @@ export default function OurTeam () {
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>
         </div>
+        <OurTeamHarmonicTablet />
+        <OurTeamHarmonicDesktop />
       </Container>
     </Section>
   )
