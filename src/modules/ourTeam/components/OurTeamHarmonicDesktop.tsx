@@ -53,7 +53,7 @@ export default function OurTeamHarmonicDesktop () {
   }
 
   return (
-    <div className="hidden mt-16 gap-6 xl:flex">
+    <div className="hidden overflow-y-hidden mt-16 gap-6 xl:flex">
       {teamArray.map((teamElem, index) => (
         <div
           style={{

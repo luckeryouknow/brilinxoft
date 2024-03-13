@@ -53,7 +53,7 @@ export default function OurTeamHarmonicTablet () {
   }
 
   return (
-    <div className="hidden mt-16 gap-6 md:flex xl:hidden">
+    <div className="hidden mt-16 overflow-y-hidden gap-6 md:flex xl:hidden">
       {teamArray.map((teamElem, index) => (
         <div
           style={{
