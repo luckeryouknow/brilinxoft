@@ -1,6 +1,11 @@
+"use client"
+
 import { Contacts, Container, Logotype } from "@/shared/components";
+import { useRouter } from "next/navigation";
 
 export default function Footer () {
+  const router = useRouter();
+
   return (
     <>
       <footer className="py-5 border-t-[1px]">
@@ -9,9 +14,9 @@ export default function Footer () {
             <Logotype className="text-[32px] md:text-[56px]" />
             <div className="flex flex-col ml-auto gap-4 items-start md:flex-row md:gap-[56px]">
               <div className="flex flex-col gap-4">
-                <button>Services</button>
-                <button>About us</button>
-                <button>Contacts</button>
+                <button onClick={() => router.push("/#services")}>Services</button>
+                <button onClick={() => router.push("/#chooseUs")}>About us</button>
+                <button onClick={() => router.push("/#whatWeCanDo")}>Contacts</button>
               </div>
               <Contacts withIcons={false} />
             </div>

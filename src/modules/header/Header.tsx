@@ -10,11 +10,11 @@ export default function Header () {
   const [right, setRight] = useState("right-[-100%]");
 
   const openButtonClick = () => {
-
+    setRight("right-0");
   };
 
   const closeButtonClick = () => {
-    
+    setRight("right-[-100%]");
   };
 
   return (
@@ -23,14 +23,14 @@ export default function Header () {
         <Container>
           <div className="flex items-center">
             <Logotype />
-            <OpenBurgerMenuButton openButtonClick={() => setRight("right-0")} />
+            <OpenBurgerMenuButton openButtonClick={openButtonClick} />
             <div className="hidden ml-auto md:block">
               <FunctionalButtons />
             </div>
           </div>
         </Container>
         <BurgerMenu 
-          closeButtonClick={() => setRight("right-[-100%]")}
+          closeButtonClick={closeButtonClick}
           right={right}
         />
       </header>

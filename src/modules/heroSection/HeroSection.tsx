@@ -1,18 +1,24 @@
 "use client"
 
 import { Blob, Container, GradientButton, Section } from "@/shared/components";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection () {
+  const router = useRouter();
+
   return (
     <Section>
       <Container>
-        <div className="flex flex-col gap-6 flex-shrink-1 md:max-w-[704px] xl:max-w-[1064px]">
-          <h2 className="text-[40px] uppercase font-bold text-transparent drop-shadow-2xl bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]">
-            Empower your business with innovative software solutions tailored to your needs
+        <div className="flex min-h-fit grow flex-col gap-6 md:max-w-[704px] xl:max-w-[1064px]">
+          <h2 className="text-[40px] md:text-[56px] uppercase font-semibold drop-shadow-2xl text-black dark:text-white">
+            <span 
+              className="min-h-fit text-transparent bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]">
+              Empower your business
+            </span> with innovative software solutions tailored to your needs
           </h2>
-          <p>We offer custom software development and outsourcing services with our team of experts.</p>
+          <p className="text-xl">We offer custom software development and outsourcing services with our team of experts.</p>
           <div className="xl:mt-5">
-            <GradientButton text="Contact us" uppercase={false} />
+            <GradientButton onClick={() => router.push("/#whatWeCanDo")} text="Contact us" uppercase={false} />
           </div>
         </div>
         <div className="hidden md:block"><Blob small={false} /></div>

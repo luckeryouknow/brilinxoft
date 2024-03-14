@@ -71,7 +71,7 @@ export default function OurTeamHarmonicDesktop () {
             <div
               onClick={(event: any) => handleCardClick(event)}
               id={`${index}`} 
-              className="absolute flex items-start w-[500px] py-4 px-4 h-[156px] bottom-[170px] left-[-175px] text-xl rotate-[-90deg] uppercase cursor-pointer text-white">
+              className="absolute flex items-start w-[500px] py-4 px-4 h-[156px] bottom-[170px] left-[-175px] text-xl rotate-[-90deg] uppercase cursor-pointer text-white transition-colors duration-400 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]">
                 {teamElem.position}
             </div>
           )}

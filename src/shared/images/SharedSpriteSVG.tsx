@@ -41,7 +41,7 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
     case "phone":
       return (
         <svg 
-          className="fill-[#0F0F0F] dark:fill-[#D9D9D9] stroke-[#0F0F0F] dark:stroke-[#D9D9D9]"
+          className="fill-[#3892F5] dark:fill-[#D9D9D9] stroke-[#3892F5] dark:stroke-[#D9D9D9]"
           xmlns="http://www.w3.org/2000/svg" 
           width="17.751" 
           height="17.7507" 
@@ -56,7 +56,7 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
     case "mail":
       return (
         <svg 
-          className="fill-[#0F0F0F] dark:fill-[#D9D9D9]"
+          className="fill-[#3892F5] dark:fill-[#D9D9D9]"
           xmlns="http://www.w3.org/2000/svg" 
           width="17.01" 
           height="12" 

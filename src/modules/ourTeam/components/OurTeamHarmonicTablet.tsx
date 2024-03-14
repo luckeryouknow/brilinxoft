@@ -74,7 +74,7 @@ export default function OurTeamHarmonicTablet () {
             <div
               onClick={(event: any) => handleCardClick(event)}
               id={`${index}`} 
-              className="absolute flex items-start py-4 px-4 w-[500px] h-[70px] top-[215px] ml-[-215px] text-xl rotate-[-90deg] uppercase">
+              className="absolute flex items-start py-4 px-4 w-[500px] h-[70px] top-[215px] ml-[-215px] text-xl text-white rotate-[-90deg] uppercase">
                 {teamElem.position}
             </div>
           )}

@@ -25,7 +25,7 @@ export default function BurgerMenu ({ closeButtonClick, right }: Props) {
           <div className="h-[1px] w-full mb-6 bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF]"></div>
           <Contacts withIcons={false} />
         </div>
-        <Blob small={true} styles="top-1/4" />
+        <Blob small={true} styles="top-[30%]" />
       </Container>
     </div>
   )

@@ -43,6 +43,10 @@ const config: Config = {
           '100%': { transform: 'translateX(100%)' },
         }
       },
+      fontFamily: {
+        sourceSans: "Source Sans Pro",
+        ysabeau: "Ysabeau SC",
+      }
     },
   },
   plugins: [],
