@@ -34,7 +34,7 @@ export default function Form () {
           }} />
         <Input placeholder="Tell us more about your project" />
       </div>
-      <GradientButton text="send" uppercase={true} />
+      <GradientButton onClick={() => {}} text="send" uppercase={true} />
     </form>    
   )
 }
