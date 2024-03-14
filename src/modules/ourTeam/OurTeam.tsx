@@ -8,7 +8,7 @@ export default function OurTeam () {
     <Section>
       <Container>
         <div className="flex flex-col gap-10 mb-5">
-          <h2 className="text-[40px]">Our great team</h2>
+          <h2 className="text-[40px] text-left">Our great team</h2>
           <p>
             Our development team is a group of passionate experts who work together to bring your ideas to life. We have the skills and experience to tackle any project, big or small. We believe in the power of collaboration. Our cross-functional development team combines expertise in design, development, and testing to deliver high-quality products on time and within budget.
           </p>

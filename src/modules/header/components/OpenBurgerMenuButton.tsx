@@ -1,8 +1,13 @@
+import { MouseEventHandler } from "react"
 import SpriteSVG from "../images/SpriteSVG"
 
-export default function OpenBurgerMenuButton () {
+type Props = {
+  openButtonClick: MouseEventHandler<HTMLButtonElement>,
+}
+
+export default function OpenBurgerMenuButton ({ openButtonClick }: Props) {
   return (
-    <button className="w-8 h-8 ml-auto md:hidden">
+    <button onClick={openButtonClick} className="w-8 h-8 ml-auto md:hidden">
       <div className="w-6 mx-auto">
         <SpriteSVG name="openBurgerMenu" />
       </div>

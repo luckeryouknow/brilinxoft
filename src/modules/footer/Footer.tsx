@@ -16,7 +16,7 @@ export default function Footer () {
               <Contacts withIcons={false} />
             </div>
           </div>
-          <div className="mt-4 text-xs text-[#D9D9D9]">
+          <div className="mt-4 text-xs text-black dark:text-[#D9D9D9]">
             <p>© 2024 Brilinxoft, Systems</p>
             <p>All Rights Reserved.</p>
           </div>

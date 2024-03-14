@@ -15,7 +15,8 @@ export default function HeroSection () {
             <GradientButton text="Contact us" uppercase={false} />
           </div>
         </div>
-        <Blob small={false} />
+        <div className="hidden md:block"><Blob small={false} /></div>
+        <div className="block md:hidden"><Blob small={true} styles="top-[15%]" /></div>
       </Container>
     </Section>
   )

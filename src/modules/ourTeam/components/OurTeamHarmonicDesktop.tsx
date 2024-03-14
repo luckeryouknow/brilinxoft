@@ -59,7 +59,7 @@ export default function OurTeamHarmonicDesktop () {
           style={{
             width: cardsWidth[index].width,
           }} 
-          className={`relative h-[500px] rounded-[20px] transition-all duration-500 ease-linear bg-white`} key={teamElem.name}>
+          className={`relative h-[500px] rounded-[20px] transition-all duration-500 ease-linear`} key={teamElem.name}>
             <Image className="w-full h-[100%] rounded-[20px] object-cover" src={person} alt="person picture" />
           {cardsWidth[index].width === "392px" && (
             <div className="absolute bottom-0 flex flex-col w-full py-2 gap-1 rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] text-center text-white">
@@ -71,7 +71,7 @@ export default function OurTeamHarmonicDesktop () {
             <div
               onClick={(event: any) => handleCardClick(event)}
               id={`${index}`} 
-              className="absolute flex items-start w-[500px] py-4 px-4 h-[156px] bottom-[170px] left-[-175px] text-xl rotate-[-90deg] uppercase cursor-pointer">
+              className="absolute flex items-start w-[500px] py-4 px-4 h-[156px] bottom-[170px] left-[-175px] text-xl rotate-[-90deg] uppercase cursor-pointer text-white">
                 {teamElem.position}
             </div>
           )}
