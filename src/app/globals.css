@@ -21,6 +21,13 @@ html, body {
 }
 
 @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/SourceSansPro/SourceSansPro-Bold.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Ysabeau SC';
   src: url('../assets/Ysabeau/YsabeauSC-SemiBold.ttf') format('truetype');
   font-weight: 600;

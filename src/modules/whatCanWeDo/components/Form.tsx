@@ -1,6 +1,5 @@
 "use client"
 
-import { GradientButton } from "@/shared/components";
 import Input from "./Input";
 import Select from 'react-select';
 import { useId } from "react";
@@ -33,8 +32,11 @@ export default function Form () {
             dropdownIndicator: () => (""),
           }} />
         <Input placeholder="Tell us more about your project" />
+        <button className={`
+        text-white mt-8 md:mt-10 max-w-fit px-12 py-[14px] rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] hover:from-100% transition-all ease-out duration-500 uppercase`}>
+          send
+        </button>
       </div>
-      <GradientButton onClick={() => {}} text="send" uppercase={true} />
     </form>    
   )
 }

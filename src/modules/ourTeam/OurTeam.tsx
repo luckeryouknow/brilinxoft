@@ -1,14 +1,9 @@
-"use client"
-
 import { Container, GradientButton, Section, TransparentButton } from "@/shared/components";
 import OurTeamSLider from "./components/OurTeamSlider";
 import OurTeamHarmonicTablet from "./components/OurTeamHarmonicTablet";
 import OurTeamHarmonicDesktop from "./components/OurTeamHarmonicDesktop";
-import { useRouter } from "next/navigation";
 
 export default function OurTeam () {
-  const router = useRouter();
-
   return (
     <Section>
       <Container>
@@ -18,14 +13,14 @@ export default function OurTeam () {
             Our development team is a group of passionate experts who work together to bring your ideas to life. We have the skills and experience to tackle any project, big or small. We believe in the power of collaboration. Our cross-functional development team combines expertise in design, development, and testing to deliver high-quality products on time and within budget.
           </p>
           <div className="hidden md:flex md:items-center md:gap-4">
-            <GradientButton onClick={() => router.push("/#whatWeCanDo")} text="Contact us" uppercase={true} />
+            <GradientButton href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>
         </div>
         <div className="flex flex-col gap-10 md:hidden">
           <OurTeamSLider />
           <div className="flex flex-col items-center gap-4">
-            <GradientButton onClick={() => router.push("/#whatWeCanDo")} text="Contact us" uppercase={true} />
+            <GradientButton href="/#whatWeCanDo" text="Contact us" uppercase={true} />
             <TransparentButton text="Online meeting" uppercase={true} />
           </div>
         </div>
