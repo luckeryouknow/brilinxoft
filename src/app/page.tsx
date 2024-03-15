@@ -4,7 +4,7 @@ import {
 
 export default function Home() {
   return (
-    <main>
+    <main className="scroll-smooth">
       <HeroSection />
       <Services />
       <DiscussionSection />

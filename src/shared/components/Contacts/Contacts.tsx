@@ -1,4 +1,5 @@
 import SharedSpriteSVG from "@/shared/images/SharedSpriteSVG";
+import Link from "next/link";
 
 export default function Contacts ({ withIcons }: { withIcons: boolean }) {
   return (
@@ -18,12 +19,12 @@ export default function Contacts ({ withIcons }: { withIcons: boolean }) {
       (
         <div className="flex flex-col gap-4">
           <p>+380 959 59 59</p>
-          <p>info@gmail.com</p>
+          <p>brilinxoft@gmail.com</p>
         </div>
       )}
       <div className="flex items-center gap-6">
-        <SharedSpriteSVG name="linkedIn" />
-        <SharedSpriteSVG name="instagram" />
+        <Link href={"https://www.linkedin.com/company/brilinxoft/"}><SharedSpriteSVG name="linkedIn" /></Link>
+        <Link href={"https://www.instagram.com/brilinxoft/"}><SharedSpriteSVG name="instagram" /></Link>
         <SharedSpriteSVG name="facebook" />          
       </div>
     </div>
