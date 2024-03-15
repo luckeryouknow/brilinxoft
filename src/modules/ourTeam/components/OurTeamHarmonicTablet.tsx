@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import person from "../images/person.jpg";
+import { teamArray } from "../data/teamArray";
 import { useState } from "react";
 
 
@@ -13,29 +13,6 @@ export default function OurTeamHarmonicTablet () {
     { width: "70px" },
     { width: "70px" },
   ]);
-
-  const teamArray = [
-    {
-      name: "Orest Tuday",
-      position: "Co-founder, CTO, CQO",
-    },
-    {
-      name: "Olha Bilyk",
-      position: "Co-founder, CEO",
-    },
-    {
-      name: "Natalia Yermishkina",
-      position: "Head of design",
-    },
-    {
-      name: "Ruslan Vorozhbyt",
-      position: "Frontend expert",
-    },
-    {
-      name: "Artem Volos",
-      position: "Backend & AI expert",
-    },
-  ];
 
   const handleCardClick = (event: any) => {
     setCardsWidth((cardsWidth) => {
@@ -61,7 +38,7 @@ export default function OurTeamHarmonicTablet () {
           }} 
           className={`relative h-[500px] rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] transition-all duration-500 ease-linear`} key={teamElem.name}>
           {cardsWidth[index].width === "326px" && (
-            <Image className="w-full h-[100%] rounded-[20px]" src={person} alt="person picture" />
+            <Image className="w-full h-[100%] rounded-[20px]" src={teamElem.image} alt="person picture" />
             )
           }
           {cardsWidth[index].width === "326px" && (
