@@ -38,13 +38,13 @@ export default function OurTeamHarmonicTablet () {
           }} 
           className={`relative h-[500px] rounded-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] transition-all duration-500 ease-linear`} key={teamElem.name}>
           {cardsWidth[index].width === "326px" && (
-            <Image className="w-full h-[100%] rounded-[20px]" src={teamElem.image} alt="person picture" />
+            <Image className="w-full h-full rounded-[20px] object-cover" src={teamElem.image} alt={teamElem.name} />
             )
           }
           {cardsWidth[index].width === "326px" && (
             <div className="absolute bottom-0 flex flex-col w-full py-2 gap-1 rounded-b-[20px] bg-gradient-to-r from-[#3892F5FF] via-[#B519F4FF] to-[#F10BD0FF] text-center text-white">
               <h3 className="text-[24px]">{teamElem.name}</h3>
-              <p className="">{teamElem.position}</p>
+              <p>{teamElem.position}</p>
             </div>
           )}
           {cardsWidth[index].width !== "326px" && (

@@ -15,7 +15,7 @@ export default function Blob ({ styles, small }: { styles?: string, small: boole
       ) : (
         <Image className="animate-spin-slow" style={{
           borderRadius: "50%", 
-        }} src={BigBlob} alt="Big Blob"  />
+        }} src={BigBlob} alt="Big Blob" priority={true}  />
       )
       }
     </div>
