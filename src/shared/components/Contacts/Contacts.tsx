@@ -8,7 +8,7 @@ export default function Contacts ({ withIcons }: { withIcons: boolean }) {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
             <SharedSpriteSVG name="mail" />
-            <p>info@gmail.com</p>
+            <p>brilinxoft@gmail.com</p>
           </div>
           <div className="flex items-center gap-4">
             <SharedSpriteSVG name="phone" />
