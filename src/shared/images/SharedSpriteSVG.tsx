@@ -3,7 +3,7 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
     case "linkedIn":
       return (
         <svg 
-          className="fill-[#3892F5] dark:fill-[#D9D9D9]"
+          className="fill-[#3892F5] dark:fill-[#D9D9D9] hover:fill-[#F10BD0] dark:hover:fill-[#F10BD0]"
           xmlns="http://www.w3.org/2000/svg" 
           width="24" 
           height="24" 
@@ -16,7 +16,7 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
     case "instagram":
       return (
         <svg 
-          className="fill-[#3892F5] dark:fill-[#D9D9D9]"
+          className="fill-[#3892F5] dark:fill-[#D9D9D9] hover:fill-[#F10BD0] dark:hover:fill-[#F10BD0]"
           xmlns="http://www.w3.org/2000/svg" 
           width="20.8303" 
           height="20.8303" 
@@ -29,7 +29,7 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
     case "facebook":
       return (
         <svg
-          className="fill-[#3892F5] dark:fill-[#D9D9D9]" 
+          className="fill-[#3892F5] dark:fill-[#D9D9D9] hover:fill-[#F10BD0] dark:hover:fill-[#F10BD0]" 
           xmlns="http://www.w3.org/2000/svg" 
           width="20.3513" 
           height="20.3513" 
@@ -63,6 +63,43 @@ export default function SharedSpriteSVG ({ name }: { name: string }) {
           fill="none">
           <path 
             d="M17.01 10.5v-9c0-.83-.6699-1.5-1.5-1.5H1.5C.67 0 0 .67 0 1.5v9c0 .83.67 1.5 1.5 1.5h14.01c.8301 0 1.5-.67 1.5-1.5ZM15.7 1.39c.33.33.1501.67-.0301.84l-4.0598 3.72 3.8999 4.06c.1199.14.2.36.0601.51-.1302.1601-.4302.15-.5601.0499l-4.3701-3.73L8.5 8.79 6.3701 6.84 2 10.5699c-.1299.1001-.43.1102-.56-.0499-.14-.15-.0601-.37.06-.51l3.8999-4.06-4.0598-3.72c-.1802-.17-.3601-.51-.03-.84.3298-.33.6699-.17.95.07L8.5 6.5l6.25-5.04c.28-.24.6201-.4.95-.07Z"/>
+        </svg>
+      )
+    case "logo-light":
+      return (
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="32" 
+          height="27" 
+          fill="none">
+          <path 
+            fill="url(#a)" 
+            d="M9.6227 13.852V0h14.1441c4.9826 0 7.13 4.1551 7.13 6.5797 0 3.1167-1.5071 5.8294-5.2751 5.8294.1694 0 .123.1449.0875.2903l.0865.2869c4.3475 0 6.1162 3.5351 6.2025 6.926.0889 3.4925-3.1303 6.9422-7.3039 6.9837-11.5936.1155-15.0716 0-15.0716 0v-4.7327H0l4.4055-4.7328h11.1299v4.7328h7.4198c3.8839 0 3.3622-6.4643.116-6.4643h-8.8111l4.2896-4.6174h3.594c3.9418-.3463 2.9563-6.2334.8115-6.2334h-7.4198v3.2322L9.6227 13.852Z"/>
+          <defs>
+            <linearGradient 
+              id="a" 
+              x1="0" 
+              x2="32" 
+              y1="13.4737" 
+              y2="13.4737" 
+              gradientUnits="userSpaceOnUse">
+              <stop stopColor="#3892F5"/>
+              <stop offset=".5" stopColor="#B519F4"/>
+              <stop offset="1" stopColor="#F10BD0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      )
+    case "logo-dark":
+      return (
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="32" 
+          height="27" 
+          fill="none">
+          <path 
+            fill="#FAFAFA" 
+            d="M9.6227 13.852V0h14.1441c4.9826 0 7.13 4.1551 7.13 6.5797 0 3.1167-1.5071 5.8294-5.2751 5.8294.1694 0 .123.1449.0875.2903l.0865.2869c4.3475 0 6.1162 3.5351 6.2025 6.926.0889 3.4925-3.1303 6.9422-7.3039 6.9837-11.5936.1155-15.0716 0-15.0716 0v-4.7327H0l4.4055-4.7328h11.1299v4.7328h7.4198c3.8839 0 3.3622-6.4643.116-6.4643h-8.8111l4.2896-4.6174h3.594c3.9418-.3463 2.9563-6.2334.8115-6.2334h-7.4198v3.2322L9.6227 13.852Z"/>
         </svg>
       )
   }

@@ -19,7 +19,7 @@ export default function Header () {
       setRight("right-[-100%]");
 
       if (type === "about") {
-        router.push("/#chooseUs"); 
+        router.push("/#about"); 
       } else if (type === "services") {
         router.push("/#services");
       } else if (type === "contacts") {
@@ -27,7 +27,7 @@ export default function Header () {
       }
     } else {
       if (type === "about") {
-        router.push("/#chooseUs"); 
+        router.push("/#about"); 
       } else if (type === "services") {
         router.push("/#services");
       } else if (type === "contacts") {
