@@ -22,7 +22,7 @@ export default function Footer () {
             </div>
           </div>
           <div className="mt-4 text-xs text-black dark:text-[#D9D9D9]">
-            <p>© 2024 Brilinxoft, Systems</p>
+            <p>© 2024 Brilinxoft</p>
             <p>All Rights Reserved.</p>
           </div>
         </Container>

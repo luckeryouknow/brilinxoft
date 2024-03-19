@@ -15,7 +15,7 @@ export default function BurgerMenu ({
   closeButtonClick, right, aboutClick, servicesClick, contactsClick 
   }: Props) {
   return (
-    <div className={`fixed flex flex-col z-10 top-0 ${right} w-full h-screen pt-4 bg-white dark:bg-black md:hidden`}>
+    <div className={`fixed flex flex-col z-10 top-0 ${right} w-full h-svh pt-4 bg-white dark:bg-black md:hidden`}>
       <Container>
         <div className="flex items-center">
           <Logotype />

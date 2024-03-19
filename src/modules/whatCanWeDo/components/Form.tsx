@@ -58,7 +58,7 @@ export default function Form () {
             placeholder={"The service you are interested in"}
             onChange={(option) => formik.setFieldValue("service", option?.label)}
             classNames={{
-              control: () => (`pt-3 pb-5 px-4 ${dropdownError ? "border-b-[#C60047]" : "border-b-vlack"} dark:${dropdownError ? "border-b-[#C60047]" : "border-b-white"} border-b-[1px] text-black dark:text-[#D9D9D9]`),
+              control: () => (`pt-3 pb-5 px-4 ${dropdownError ? "border-b-[#C60047]" : "border-b-black"} dark:${dropdownError ? "border-b-[#C60047]" : "border-b-white"} border-b-[1px] text-black dark:text-[#D9D9D9]`),
               option: () => ("py-5"),
               menu: () => ("w-full bg-white dark:bg-black"),
               dropdownIndicator: () => (""),
