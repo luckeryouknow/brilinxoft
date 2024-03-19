@@ -11,14 +11,14 @@ export default function Form () {
   const formik = useFormik({
     initialValues: {
       name: "",
-      phone: "",
+      email: "",
       companyName: "",
       service: "",
       tellMore: "",
     },
     validationSchema: Yup.object().shape({
       name: Yup.string().required(),
-      phone: Yup.string().required(),
+      email: Yup.string().email().required(),
       companyName: Yup.string().required(),
       service: Yup.string().required(),
       tellMore: Yup.string(),
@@ -26,7 +26,7 @@ export default function Form () {
     onSubmit: (values) => {
       console.log({
         "name": values.name,
-        "phone": values.phone,
+        "email": values.email,
         "company name": values.companyName,
         "service": values.service,
         "tell more": values.tellMore,
@@ -48,7 +48,7 @@ export default function Form () {
     <form onSubmit={formik.handleSubmit} className="pb-[120px] overflow-hidden xl:w-1/2">
       <div className="mb-8">
         <Input formik={formik} id={"name"} placeholder="Name" />
-        <Input formik={formik} id={"phone"} placeholder="Phone" />
+        <Input formik={formik} id={"email"} placeholder="Email" />
         <Input formik={formik} id={"companyName"} placeholder="Your company name" />
         <div className="relative py-4">
           <Select
