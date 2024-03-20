@@ -11,6 +11,8 @@ import { Modal } from "@/shared/components";
 export default function Form () {
   const [modalDisplay, setModalDisplay] = useState("hidden");
 
+  const url = "https://companypage-55ef8dd3b024.herokuapp.com/api/v1/send-email/";
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -26,14 +28,22 @@ export default function Form () {
       service: Yup.string(),
       tellMore: Yup.string(),
     }),
-    onSubmit: (values, { resetForm }) => {
-      console.log({
+    onSubmit: async (values, { resetForm }) => {
+      const data = {
         "name": values.name,
         "email": values.email,
-        "company name": values.companyName,
-        "service": values.service,
-        "tell more": values.tellMore,
-      });
+        "company_name": values.companyName,
+        "interested_service": values.service,
+        "details": values.tellMore,
+      };
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
       setModalDisplay("flex");
       resetForm();
     },
