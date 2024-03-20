@@ -1,5 +1,3 @@
-"use client"
-
 import BigBlob from "../../images/BigBlob.png";
 import SmallBlob from "../../images/SmallBLob.png";
 import Image from "next/image";

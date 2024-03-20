@@ -1,5 +1,4 @@
 import { Blob, Container, GradientButton, Section } from "@/shared/components";
-import { useRouter } from "next/navigation";
 
 export default function NotFound () {
   return (

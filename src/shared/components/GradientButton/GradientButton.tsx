@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { MouseEventHandler } from "react"
 
 type Props = {
   text: string,

@@ -6,7 +6,6 @@ import FunctionalButtons from "./components/FunctionalButtons";
 import BurgerMenu from "./components/BurgerMenu";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { WhatCanWeDo } from "..";
 
 export default function Header () {
   const router = useRouter();
@@ -38,12 +37,10 @@ export default function Header () {
 
   const openButtonClick = () => {
     setRight("right-0");
-    document.body.style.overflowY = "hidden";
   };
 
   const closeButtonClick = () => {
     setRight("right-[-100%]");
-    document.body.style.overflowY = "scroll";
   };
 
   return (
