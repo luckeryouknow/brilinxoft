@@ -36,6 +36,9 @@ export default function Form () {
         "interested_service": values.service,
         "details": values.tellMore,
       };
+      setModalDisplay("flex");
+      resetForm();
+      
       await fetch(url, {
         method: "POST",
         headers: {
@@ -43,9 +46,6 @@ export default function Form () {
         },
         body: JSON.stringify(data),
       })
-
-      setModalDisplay("flex");
-      resetForm();
     },
   });
 
