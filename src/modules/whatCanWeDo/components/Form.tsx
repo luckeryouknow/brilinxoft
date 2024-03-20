@@ -4,9 +4,13 @@ import Input from "./Input";
 import Select from 'react-select';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import { useState } from "react";
+import { Modal } from "@/shared/components";
 
 
 export default function Form () {
+  const [modalDisplay, setModalDisplay] = useState("hidden");
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -22,7 +26,7 @@ export default function Form () {
       service: Yup.string(),
       tellMore: Yup.string(),
     }),
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       console.log({
         "name": values.name,
         "email": values.email,
@@ -30,6 +34,8 @@ export default function Form () {
         "service": values.service,
         "tell more": values.tellMore,
       });
+      setModalDisplay("flex");
+      resetForm();
     },
   });
 
@@ -82,6 +88,10 @@ export default function Form () {
           send
         </button>
       </div>
+      <Modal 
+        modalClick={() => setModalDisplay("hidden")}
+        modalDisplay={modalDisplay} 
+      />
     </form>    
   )
 }

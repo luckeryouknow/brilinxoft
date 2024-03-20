@@ -1,7 +1,7 @@
 import { Blob, Contacts, Container, Logotype } from "@/shared/components";
 import FunctionalButtons from "./FunctionalButtons";
-import SpriteSVG from "../images/SpriteSVG";
 import { MouseEventHandler } from "react";
+import SharedSpriteSVG from "@/shared/images/SharedSpriteSVG";
 
 type Props = {
   closeButtonClick: MouseEventHandler<HTMLButtonElement>,
@@ -21,7 +21,7 @@ export default function BurgerMenu ({
           <Logotype />
           <button onClick={closeButtonClick} className="w-8 h-8 ml-auto md:hidden">
             <div className="w-6 mx-auto">
-              <SpriteSVG name="closeBurgerMenu" />
+              <SharedSpriteSVG name="closeButton" />
             </div>
           </button>
         </div>
