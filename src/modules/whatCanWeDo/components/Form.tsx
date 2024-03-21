@@ -62,8 +62,13 @@ export default function Form () {
   return (
     <form onSubmit={formik.handleSubmit} className="mt-10 pb-[120px] overflow-hidden xl:w-1/2 md:mt-0">
       <div className="flex flex-col gap-4 mb-8">
-        <Input formik={formik} id={"name"} placeholder="Name" />
-        <Input formik={formik} id={"email"} placeholder="Email" />
+        <Input formik={formik} id={"name"} errorText="This field is required" placeholder="Name" />
+        <Input 
+          formik={formik} 
+          id={"email"} 
+          errorText={`${formik.values.email ? "Incorrect email format" : "This field is required"}`} 
+          placeholder="Email" 
+        />
         <Input formik={formik} id={"companyName"} placeholder="Your company name" />
         <div className="relative py-4">
           <label className={`absolute top-0 left-4 ${formik.values.service ? "block" : "hidden"} text-sm`} htmlFor="service">Service</label>
@@ -79,9 +84,6 @@ export default function Form () {
               menu: () => ("w-full bg-white dark:bg-black"),
               dropdownIndicator: () => (""),
             }} />
-            {dropdownError && (
-              <p className="absolute right-0 bottom-0 text-[#C60047] text-xs">This field is necessary</p>
-            )}
         </div>
         <div className="relative">
           <label className={`absolute top-0 left-4 ${formik.values.tellMore ? "block" : "hidden"} text-sm`} htmlFor="tellMore">Tell us more about your project</label>

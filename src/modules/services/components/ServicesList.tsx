@@ -10,12 +10,12 @@ export default function ServicesList () {
     {
       number: "02",
       heading: "Quality Assurance & Testing",
-      text: "Our comprehensive QA and testing uncover and eliminate bugs before launch, saving you time and money ensure your software is stable, secure, and meets the highest quality standards.",
+      text: "Comprehensive QA and testing uncover and eliminate bugs before launch, saving time and money to ensure software stability, security, and adherence to the highest quality standards.",
     },
     {
       number: "03",
       heading: "UX/UI Design",
-      text: "Our UI/UX design expertise translates complex ideas into user-friendly interfaces, maximizing usability and impact that drive engagement and user satisfaction.",
+      text: "We provide ui/ux design that translates complex ideas into user-friendly interfaces, maximizing usability and impact that drive engagement and user satisfaction.",
     },
     {
       number: "04",
